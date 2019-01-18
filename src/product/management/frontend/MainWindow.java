@@ -571,7 +571,7 @@ public class MainWindow extends javax.swing.JFrame {
                 int id = Integer.parseInt(txt_id.getText());
                 ps.setInt(1, id);
                 ps.executeUpdate();
-                //Show_Products_In_JTable();
+                Show_Products_In_JTable();
                 JOptionPane.showMessageDialog(null, "Product Deleted");
             } catch (SQLException ex) {
                 Logger.getLogger(MainWindow.class.getName()).log(Level.SEVERE, null, ex);
